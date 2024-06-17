@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraBook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" type="img/png" href="logo.jpg">
+    <link rel="stylesheet" href="Ultrabook.css">
+
+</head>
+<body>
+
+    <nav class="stroke">
+        <h2 class="name">ZenithL</h2>
+        <ul id="un-list">
+          <li><a class="link" href="index.html">Home</a></li>
+
+          <div class="dropdown">
+            <button class="dropbtn"><span>PRODUCT</span>
+              <span><i class="fa fa-caret-down"></i></span>
+            </button>
+            
+            <div class="dropdown-content">
+              <a href="GamingLaptop.html">GAMING LAPTOP</a>
+              <a href="Ultrabook.html"><span>ULTRABOOK</span></a>
+              <a href="GeneralPurpose.html">GENERAL PURPOSE</a>
+            </div>
+          </div> 
+          
+          <li><a class="link" href="About.html">About Us</a></li>
+        </ul>
+
+    <div class="container">
+        <form action="/search" method="GET" class="search-form">
+          <i class="fa fa-search"></i>
+          <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search...">
+        </form>
+       
+       <ul id="itemList">
+        <li class="item"><a href="GeneralPurpose.html" class="list-link">General Purpose</a></li>
+        <li class="item"><a href="GamingLaptop.html" class="list-link">Gaming Laptop</a>  </li>
+        <li class="item"><a href="Ultrabook.html" class="list-link">UltraBook</a>      </li>
+       </ul>
+    </div>
+    </nav>
+
+     <!--CONTENT-->
+
+     <div class="left">
+        <div class="Container">
+        <h1> WHY CHOOSE A <br> ULTRABOOK?</h1>
+    
+        <h2 class="intro">
+            A ultrabook offers a blend of elegance, portability, and performance. Ultrabooks are designed to be thin and lightweight, making them perfect for on-the-go use. 
+            Despite their sleek form factor, they pack powerful processors and fast storage, ensuring quick and efficient performance for everyday tasks. <br><br>
+            High-resolution displays and long battery life enhance the user experience, whether for work or entertainment. 
+            The premium build quality ensures durability and a sophisticated look. Ideal for professionals, students, and travelers,
+            ultrabooks provide a seamless balance between style and functionality, making them an excellent choice for those who value both aesthetics and performance.
+        </h2>
+    
+        <a href="#discover">
+        <button id="btn-dis">
+            RECOMMENDATION
+        </button>
+        </a>
+        
+        </div>
+        </div>
+    
+        <div class="right">
+
+            <div class="con-img">
+                <img id="glaptop" src="Ulaptop.png" alt="">
+            </div>
+
+        <div></div>
+
+        </div>
+
+        <div class="space"></div>
+
+    
+        <div class="center">
+            <div class="line"></div>
+        </div>
+
+        <div id="discover"></div>
+
+        <!-- RECOMMENDATION -->
+
+        <div class="con-reco">
+            <h3>RECOMMENDATION</h3>
+            <div class="space"></div>
+
+          <div class="center">
+
+            <div class="box-glaptop">
+
+                <div class="center">
+                <img class="laptop" src="dell xps 13.png">
+                </div>
+
+                <div class="space-box"></div>
+                <div class="con-p">
+                <h5> <span class="red"> Dell XPS 13</span> <br> (Intel Core i7 - <br> 1185G7)  </h5>
+        
+                <p> High performance, premium build quality, compact design, ideal for users seeking a high-end Windows ultrabook.</p>
+                </div>
+
+                <br> 
+
+                <div class="center">
+                <button id="btn-specs-rog" onclick="loadIframe('U-Dell-Specs.html')">
+                        SPECIFICATION
+                </button>
+                </div>
+
+            </div>
+
+            <div class="box-glaptop">
+                
+                <div class="center">
+                <img style="width: 430px;" class="laptop" src="MacBook Air (M1, 2020).png">
+                </div>
+
+                <div class="space-box"></div>
+                <div class="con-p">
+                <h5> <span class="blue"> MacBook Air (M1, 2020)</span> <br> (Apple M1 -<br> Chip)  </h5>
+        
+                <p> Exceptional performance and battery life, lightweight design, perfect for those deeply integrated into the Apple ecosystem.</p>
+                </div>
+
+                <br>
+
+                <div class="center">
+                <button id="btn-specs-msi" onclick="loadIframe('U-MB-Specs.html')">
+                    SPECIFICATION
+                </button>
+                </div>
+
+            </div>
+
+            
+            <div class="box-glaptop">
+                
+                <div class="center">
+                <img  style="width: 400px;" class="laptop" src="HP Envy 13.png">
+                </div>
+
+                <div class="space-box"></div>
+                <div class="con-p">
+                <h5> <span class="green"> HP Envy 13</span> <br> (Intel Core i7 - <br> 1165G7)  </h5>
+        
+                <p> Strong performance, good battery life, sleek design, and excellent value, making it a great choice for students and professionals.</p>
+                </div>
+
+                <br> 
+
+                <div class="center">
+                <button id="btn-specs-razer" onclick="loadIframe('U-HP-Specs.html')">
+                        SPECIFICATION
+                </button>
+                </div>
+
+
+            </div>           
+
+          </div>
+
+        </div>
+
+        <div class="center">
+            <div class="line"></div>
+        </div>
+
+        <!--SPECIFICATION - IFRAME -->
+
+     
+        <h3>SPECIFICATION</h3>
+
+        <div class="center">
+
+            <div class="con-frame">
+            <iframe id="contentFrame" src="about:blank"></iframe>
+            </div>
+
+        </div>
+
+        <div class="space"></div>
+
+
+        <footer>
+            <div class="center">
+            <p>&copy; 2024 All Rights Reserved. <span class="color">ZenithL</span> </p>
+        </div>
+        </footer>
+
+
+      <script src="Frame.js"></script>
+
+</body>
+</html>

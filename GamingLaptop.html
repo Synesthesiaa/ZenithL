@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamingLaptop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="icon" type="img/png" href="logo.jpg">
+    <link rel="stylesheet" href="GamingLaptop.css">
+
+</head>
+<body>
+
+    <nav class="stroke">
+        <h2 class="name">ZenithL</h2>
+        <ul id="un-list">
+          <li><a class="link" href="index.html">Home</a></li>
+
+          <div class="dropdown">
+            <button class="dropbtn"><span>PRODUCT</span>
+              <span><i class="fa fa-caret-down"></i></span>
+            </button>
+            
+            <div class="dropdown-content">
+              <a href="GamingLaptop.html"><span>GAMING LAPTOP</span></a>
+              <a href="Ultrabook.html">ULTRABOOK</a>
+              <a href="GeneralPurpose.html">GENERAL PURPOSE</a>
+            </div>
+          </div> 
+          
+          <li><a class="link" href="About.html">About Us</a></li>
+        </ul>
+
+    <div class="container">
+        <form action="/search" method="GET" class="search-form">
+          <i class="fa fa-search"></i>
+          <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Search...">
+        </form>
+       
+       <ul id="itemList">
+        <li class="item"><a href="GeneralPurpose.html" class="list-link">General Purpose</a></li>
+        <li class="item"><a href="GamingLaptop.html" class="list-link">Gaming Laptop</a>  </li>
+        <li class="item"><a href="Ultrabook.html" class="list-link">UltraBook</a>      </li>
+       </ul>
+    </div>
+    </nav>
+
+     <!--CONTENT-->
+
+     <div class="left">
+        <div class="Container">
+        <h1> WHY CHOOSE A <br> GAMING LAPTOP?</h1>
+    
+        <h2 class="intro">
+            A gaming laptop ensures top-tier performance and versatility. Equipped with powerful processors and advanced graphics cards, 
+            these laptops handle intensive tasks like gaming, video editing, and 3D modeling effortlessly.
+            High-resolution displays and smooth frame rates provide exceptional visuals, enhancing both gaming and media experiences. <br><br>
+             Advanced cooling systems prevent overheating, ensuring consistent performance during prolonged use. Built with durability in mind, 
+             gaming laptops withstand heavy use and are future-proof, staying relevant for longer with the latest games and software. 
+            In essence, a gaming laptop is a robust, multifunctional device perfect for both play and productivity.     </h2>
+    
+        <a href="#discover">
+        <button id="btn-dis">
+            RECOMMENDATION
+        </button>
+        </a>
+        
+        </div>
+        </div>
+    
+        <div class="right">
+
+            <div class="con-img">
+                <img id="glaptop" src="Glaptop.png" alt="">
+            </div>
+
+        <div></div>
+
+        </div>
+
+        <div class="space"></div>
+
+    
+        <div class="center">
+            <div class="line"></div>
+        </div>
+
+        <div id="discover"></div>
+
+        <!-- RECOMMENDATION -->
+
+        <div class="con-reco">
+            <h3>RECOMMENDATION</h3>
+            <div class="space"></div>
+
+          <div class="center">
+
+            <div class="box-glaptop">
+
+                <div class="center">
+                <img class="laptop" src="Asus ROG Zephyrus G15.png">
+                </div>
+
+                <div class="space-box"></div>
+                <div class="con-p">
+                <h5> <span class="red"> Asus ROG Zephyrus G15</span> <br> (AMD Ryzen 9  - <br> 5900HS)  </h5>
+        
+                <p> Offers a great balance of performance, portability, and battery life, making it suitable for 
+                    gamers who need a more portable option without sacrificing too much power.</p>
+                </div>
+
+                <br> 
+
+                <div class="center">
+                <button id="btn-specs-rog" onclick="loadIframe('G-ROG-Specs.html')">
+                        SPECIFICATION
+                </button>
+                </div>
+
+            </div>
+
+            <div class="box-glaptop">
+                
+                <div class="center">
+                <img style="width: 430px;" class="laptop" src="MSI GE76 Raider.png">
+                </div>
+
+                <div class="space-box"></div>
+                <div class="con-p">
+                <h5> <span class="blue"> MSI GE76 Raider</span> <br> (Intel Core i9 - <br> 11980HK)  </h5>
+        
+                <p> Provides exceptional performance with its top-tier specs and larger display,
+                     perfect for gamers who want a desktop replacement with a big screen and high performance.</p>
+                </div>
+
+                <div class="center">
+                <button id="btn-specs-msi" onclick="loadIframe('G-MSI-Specs.html')">
+                    SPECIFICATION
+                </button>
+                </div>
+
+            </div>
+
+            
+            <div class="box-glaptop">
+                
+                <div class="center">
+                <img  style="width: 460px;" class="laptop" src="Razer Blade 15 Advanced Model.png">
+                </div>
+
+                <div class="space-box"></div>
+                <div class="con-p">
+                <h5> <span class="green"> Razer Blade 15 Advanced Model</span> <br> (Intel Core i7- <br> 11800H )  </h5>
+        
+                <p> Known for its premium build and high-refresh-rate display, ideal for competitive gamers who want a sleek, powerful machine.</p>
+                </div>
+
+                <br> 
+
+                <div class="center">
+                <button id="btn-specs-razer" onclick="loadIframe('G-RAZER-Specs.html')">
+                        SPECIFICATION
+                </button>
+                </div>
+
+
+            </div>           
+
+          </div>
+
+        </div>
+
+        <div class="center">
+            <div class="line"></div>
+        </div>
+
+        <!--SPECIFICATION - IFRAME -->
+
+     
+        <h3>SPECIFICATION</h3>
+
+        <div class="center">
+
+            <div class="con-frame">
+            <iframe id="contentFrame" src="about:blank"></iframe>
+            </div>
+
+        </div>
+
+        <div class="space"></div>
+
+        <footer>
+            <div class="center">
+            <p>&copy; 2024 All Rights Reserved. <span class="color">ZenithL</span> </p>
+        </div>
+        </footer>
+
+
+      <script src="Frame.js"></script>
+
+</body>
+</html>
